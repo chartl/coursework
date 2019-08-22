@@ -1,0 +1,19 @@
+beagle.jar (r1399)
+Copyright (C) 2014 Brian L. Browning
+Enter "java -jar beagle.jar" for a summary of command line arguments.
+Start time: 01:17 PM PDT on 02 Jul 2015
+
+Command line: java -Xmx7262m -jar beagle.jar
+  ref=test.vcf
+  simped=true
+  out=simped_test
+  impute=false
+  ped=test.ped
+
+Number of markers:             0
+Total time for building model: 0 seconds
+Total time for sampling:       0 seconds
+Total run time:                0 seconds
+
+End time: 01:17 PM PDT on 02 Jul 2015
+beagle.jar (r1399) finished

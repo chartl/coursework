@@ -1,0 +1,30 @@
+plugins {
+  id 'java'
+  id 'com.github.johnrengelman.shadow' version '1.2.1'
+}
+
+apply plugin: 'java'
+
+
+jar {
+  manifest {
+    attributes 'Main-Class':'main.Main'
+  }
+  destinationDir = file("build/package")
+}
+
+shadowJar {
+  baseName = 'beagle'
+  destinationDir = file("build/package")
+}
+
+repositories {
+  flatDir {
+    dirs 'libs'
+  }
+}
+
+dependencies {
+  compile name: 'com_google_guava_guava_18.0_guava-18.0'
+  compile name: 'LAML-1.6.2'
+}
